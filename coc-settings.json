@@ -1,0 +1,23 @@
+{
+	"prettier.useTabs": true,
+	"prettier.enable": true,
+	"prettier.printWidth": 80,
+	"coc.preferences.formatOnSave": false,
+    "coc.preferences.extensionUpdateCheck": "weekly",
+
+	"diagnostic.checkCurrentLine": true,
+
+	// Python config
+	"python.linting.enabled": true,
+	"python.linting.mypyEnabled": true,
+
+	"clangd.path": "/home/magic/.config/coc/extensions/coc-clangd-data/install/clangd_16.0.2/bin/clangd",
+	"clangd.fallbackFlags": ["-xc"],
+
+	"clangd.arguments": ["-fallback-style=\"{BasedOn: R&K, IndentWidth: 4}\""],
+	"dialog.rounded": true,
+
+	"snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"],
+
+	"snippets.ultisnips.pythonPrompt": true
+}
