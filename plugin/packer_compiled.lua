@@ -90,7 +90,7 @@ _G.packer_plugins = {
     url = "https://github.com/vim-scripts/ReplaceWithRegister"
   },
   ["better-comments.nvim"] = {
-    config = { "\27LJ\2\n∫\2\0\0\4\0\a\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\5\0005\3\3\0>\3\1\0025\3\4\0>\3\2\0025\3\5\0>\3\3\0025\3\6\0>\3\4\2B\0\2\1K\0\1\0\1\0\5\17virtual_text\bÔÅ±\tname\6!\tbold\2\abg\5\afg\f#f44747\1\0\5\17virtual_text\14Beware!!!\tname\fWARNING\tbold\1\abg\5\afg\f#FFA500\1\0\5\17virtual_text\vFix it\tname\bFIX\tbold\2\abg\f#f44747\afg\nwhite\1\0\5\17virtual_text\5\tname\tTODO\tbold\2\abg\f#0a7aca\afg\nwhite\nsetup\18nvim-surround\frequire\0" },
+    config = { "\27LJ\2\n∫\2\0\0\4\0\a\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\5\0005\3\3\0>\3\1\0025\3\4\0>\3\2\0025\3\5\0>\3\3\0025\3\6\0>\3\4\2B\0\2\1K\0\1\0\1\0\5\tbold\2\17virtual_text\bÔÅ±\abg\5\afg\f#f44747\tname\6!\1\0\5\tbold\1\17virtual_text\14Beware!!!\abg\5\afg\f#FFA500\tname\fWARNING\1\0\5\tbold\2\17virtual_text\vFix it\abg\f#f44747\afg\nwhite\tname\bFIX\1\0\5\tbold\2\17virtual_text\5\abg\f#0a7aca\afg\nwhite\tname\tTODO\nsetup\18nvim-surround\frequire\0" },
     loaded = true,
     path = "/home/magic/.local/share/nvim/site/pack/packer/start/better-comments.nvim",
     url = "https://github.com/Djancyp/better-comments.nvim"
@@ -134,6 +134,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/magic/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  gruvbox = {
+    loaded = true,
+    path = "/home/magic/.local/share/nvim/site/pack/packer/start/gruvbox",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
@@ -260,6 +265,11 @@ _G.packer_plugins = {
     path = "/home/magic/.local/share/nvim/site/pack/packer/start/typescript.nvim",
     url = "https://github.com/jose-elias-alvarez/typescript.nvim"
   },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/magic/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
   ["vim-maximizer"] = {
     loaded = true,
     path = "/home/magic/.local/share/nvim/site/pack/packer/start/vim-maximizer",
@@ -275,8 +285,12 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: better-comments.nvim
 time([[Config for better-comments.nvim]], true)
-try_loadstring("\27LJ\2\n∫\2\0\0\4\0\a\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\5\0005\3\3\0>\3\1\0025\3\4\0>\3\2\0025\3\5\0>\3\3\0025\3\6\0>\3\4\2B\0\2\1K\0\1\0\1\0\5\17virtual_text\bÔÅ±\tname\6!\tbold\2\abg\5\afg\f#f44747\1\0\5\17virtual_text\14Beware!!!\tname\fWARNING\tbold\1\abg\5\afg\f#FFA500\1\0\5\17virtual_text\vFix it\tname\bFIX\tbold\2\abg\f#f44747\afg\nwhite\1\0\5\17virtual_text\5\tname\tTODO\tbold\2\abg\f#0a7aca\afg\nwhite\nsetup\18nvim-surround\frequire\0", "config", "better-comments.nvim")
+try_loadstring("\27LJ\2\n∫\2\0\0\4\0\a\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\5\0005\3\3\0>\3\1\0025\3\4\0>\3\2\0025\3\5\0>\3\3\0025\3\6\0>\3\4\2B\0\2\1K\0\1\0\1\0\5\tbold\2\17virtual_text\bÔÅ±\abg\5\afg\f#f44747\tname\6!\1\0\5\tbold\1\17virtual_text\14Beware!!!\abg\5\afg\f#FFA500\tname\fWARNING\1\0\5\tbold\2\17virtual_text\vFix it\abg\f#f44747\afg\nwhite\tname\bFIX\1\0\5\tbold\2\17virtual_text\5\abg\f#0a7aca\afg\nwhite\tname\tTODO\nsetup\18nvim-surround\frequire\0", "config", "better-comments.nvim")
 time([[Config for better-comments.nvim]], false)
+-- Config for: nvim-surround
+time([[Config for nvim-surround]], true)
+try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
+time([[Config for nvim-surround]], false)
 -- Config for: startup.nvim
 time([[Config for startup.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fstartup\frequire\0", "config", "startup.nvim")
@@ -285,10 +299,6 @@ time([[Config for startup.nvim]], false)
 time([[Config for toggleterm.nvim]], true)
 try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
 time([[Config for toggleterm.nvim]], false)
--- Config for: nvim-surround
-time([[Config for nvim-surround]], true)
-try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
-time([[Config for nvim-surround]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-treesitter ]]

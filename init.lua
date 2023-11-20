@@ -2,6 +2,8 @@ require("Magic.plugins-setup")
 
 require ("Magic.plugins.catppuccin")
 
+vim.cmd([[colorscheme catppuccin-mocha]])
+
 require ("Magic.core.options")
 
 require ("Magic.core.colorscheme")
@@ -42,4 +44,6 @@ require ("Magic.commands.terminal")
 
 require ("Magic.commands.runner")
 
-vim.cmd([[set colorcolumn=80]])
+require ("ColorSwitcher.init")
+
+-- vim.cmd([[set colorcolumn=80]])

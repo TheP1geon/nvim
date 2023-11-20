@@ -30,6 +30,7 @@ local function setup()
         Star = ".star",
         V = ".v",
         Lua = ".lua",
+        Mojo = ".mojo",
     }
 
     compilers = {
@@ -41,7 +42,8 @@ local function setup()
         ["Java"] = string.format("javac %s && java %s",fileName, fileName),
         ["Star"] = string.format("star %s", fileName),
         ["V"] = string.format("v run %s", fileName),
-        ["Lua"] = string.format("lua %s", fileName)
+        ["Lua"] = string.format("lua %s", fileName),
+        ["Mojo"] = string.format("mojo %s", fileName),
     }
 end
 

@@ -79,10 +79,10 @@ vim.api.nvim_create_user_command("Test",
         local _buffer = vim.api.nvim_win_get_buf(0)
         local _fileName = vim.fn.expand(vim.api.nvim_buf_get_name(_buffer))
         print(_fileName)
-        
+
         local _fileNameWithoutExt = string.gsub(_fileName, '%.[^.]*$', '')
         print(_fileNameWithoutExt)
-        
+
         local _ext = string.match(_fileName, '%.[^.]*$')
 
         print(_ext)

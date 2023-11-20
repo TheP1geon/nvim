@@ -36,6 +36,7 @@ return packer.startup(function(use)
 
         --Color scheme
     use { "catppuccin/nvim", as = "catppuccin" }
+    use { "ellisonleao/gruvbox.nvim", as = "gruvbox" }   
 
     use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
@@ -174,6 +175,8 @@ return packer.startup(function(use)
         end
     
     })
+
+    use("tpope/vim-fugitive")
     
     if packer_bootstrap then
         require("packer").sync()

@@ -19,5 +19,7 @@
 
 	"snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"],
 
-	"snippets.ultisnips.pythonPrompt": true
+	"snippets.ultisnips.pythonPrompt": true,
+
+    "sourcekit.commandPath": "/lib/swift/bin/sourcekit-lsp",
 }

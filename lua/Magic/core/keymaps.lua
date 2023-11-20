@@ -6,6 +6,12 @@ local keymap = vim.keymap
 
 -- general keymaps
 
+-- For local replace
+keymap.set("n", "gr", "gd[{V%::s/<C-R>///gc<left><left><left>")
+
+-- For global replace
+keymap.set("n", "gr", "gD:%s/<C-R>///gc<left><left><left>")
+
 -- Leaving terminal mode is (C-\ C-N), here's a better one!
 keymap.set("t", "<ESC>", "<C-\\><C-n>")
 
