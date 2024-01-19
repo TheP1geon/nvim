@@ -44,6 +44,21 @@ require ("Magic.commands.terminal")
 
 require ("Magic.commands.runner")
 
-require ("ColorSwitcher.init")
+vim.cmd([[set colorcolumn=80]])
 
--- vim.cmd([[set colorcolumn=80]])
+vim.cmd([[highlight vasmKeyword ctermfg=red guifg=#eba0ac]])
+-- vim.cmd([[highlight MKeyword ctermfg=red guifg=#eba0ac]])
+
+vim.api.nvim_exec([[
+  augroup filetype_mv
+    autocmd!
+    autocmd BufRead,BufNewFile *.mv set filetype=vasm
+  augroup END
+]], false)
+
+vim.api.nvim_exec([[
+  augroup filetype_blaze
+    autocmd!
+    autocmd BufRead,BufNewFile *.bz set filetype=blaze
+  augroup END
+]], false)

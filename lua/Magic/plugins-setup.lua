@@ -139,6 +139,8 @@ return packer.startup(function(use)
     use("xiyaowong/transparent.nvim")
 
     use "lukas-reineke/indent-blankline.nvim"
+
+    use "norcalli/nvim-colorizer.lua"
     
     use ({"Djancyp/better-comments.nvim",
         config = function()
@@ -173,11 +175,12 @@ return packer.startup(function(use)
                     }
             })
         end
-    
     })
 
     use("tpope/vim-fugitive")
     
+    use ("zaldih/themery.nvim")
+
     if packer_bootstrap then
         require("packer").sync()
     end
