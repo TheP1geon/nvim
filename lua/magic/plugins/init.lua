@@ -1,4 +1,6 @@
 return {
+    "sainnhe/gruvbox-material",
+
     "sainnhe/everforest",
 
     "ellisonleao/gruvbox.nvim",

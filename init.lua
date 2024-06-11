@@ -1,6 +1,6 @@
 require("magic")
 
-vim.cmd.colorscheme("everforest")
+vim.cmd.colorscheme("gruvbox-material")
 
 vim.cmd("let g:netrw_banner=0")
 
